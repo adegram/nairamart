@@ -2,6 +2,8 @@
 
 NairaMart is a Nigerian ecommerce web app built as an **HNG Lesson 2 individual task**. Browse a Neon-backed catalog, add items to a cart that survives refreshes, sign in with Google, review a checkout page, and finish a **demo** order that sends a confirmation email through Mailgun.
 
+Visit https://nairamart-eta.vercel.app to view the live website
+
 > **The payment button is a demo.** NairaMart does not integrate Stripe, Paystack, Flutterwave, PayPal or any other gateway. Clicking "Pay ₦X (Demo)" charges nothing, stores no order, and ships nothing. The success page says so explicitly.
 
 ## Features
