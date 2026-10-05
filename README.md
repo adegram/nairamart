@@ -58,19 +58,17 @@ npm install
 cp .env.example .env.local
 ```
 
-## Environment variables
+### Environment Variables
 
-| `DATABASE_URL` | Neon connection string (`...?sslmode=require`) |
-| `AUTH_SECRET` | Random secret. Generate with `npx auth secret` or `openssl rand -base64 32` |
-| `AUTH_URL` | Site URL, e.g. `http://localhost:3000` locally. On Vercel it can be left unset or set to your production URL |
-| `GOOGLE_CLIENT_ID` | From Google Cloud Console |
-| `GOOGLE_CLIENT_SECRET` | From Google Cloud Console |
-| `MAILGUN_API_KEY` | Mailgun API key (server-side only) |
-| `MAILGUN_DOMAIN` | Mailgun sending domain, e.g. `sandbox123.mailgun.org` |
-| `MAILGUN_FROM_EMAIL` | Sender, e.g. `NairaMart <postmaster@sandbox123.mailgun.org>` |
-| `MAILGUN_BASE_URL` | Optional. `https://api.eu.mailgun.net` for EU-region domains |
-
-None use the `NEXT_PUBLIC_` prefix, so none are exposed to the browser.
+- `DATABASE_URL` — Neon connection string (`...?sslmode=require`)
+- `AUTH_SECRET` — Random secret. Generate with `npx auth secret` or `openssl rand -base64 32`
+- `AUTH_URL` — Site URL, e.g. `http://localhost:3000` locally. On Vercel, it can be left unset or set to your production URL
+- `GOOGLE_CLIENT_ID` — From Google Cloud Console
+- `GOOGLE_CLIENT_SECRET` — From Google Cloud Console
+- `MAILGUN_API_KEY` — Mailgun API key (server-side only)
+- `MAILGUN_DOMAIN` — Mailgun sending domain, e.g. `sandbox123.mailgun.org`
+- `MAILGUN_FROM_EMAIL` — Sender, e.g. `NairaMart <postmaster@sandbox123.mailgun.org>`
+- `MAILGUN_BASE_URL` — Optional. Use `https://api.eu.mailgun.net` for EU-region domains
 
 ## Neon setup
 
