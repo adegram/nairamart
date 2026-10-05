@@ -60,8 +60,6 @@ cp .env.example .env.local
 
 ## Environment variables
 
-| Variable | Description |
-| --- | --- |
 | `DATABASE_URL` | Neon connection string (`...?sslmode=require`) |
 | `AUTH_SECRET` | Random secret. Generate with `npx auth secret` or `openssl rand -base64 32` |
 | `AUTH_URL` | Site URL, e.g. `http://localhost:3000` locally. On Vercel it can be left unset or set to your production URL |
@@ -90,16 +88,6 @@ npm run db:seed        # inserts 24 realistic NairaMart products (safe to re-run
 `npm run db:push` syncs the schema directly during development. After changing `src/db/schema.ts`, run `npm run db:generate`.
 
 Product images are generated placeholders (`npm run images:generate`). To use real photos, store full URLs in the `image` column and add the host to `images.remotePatterns` in `next.config.ts` (and remove `unoptimized` from the `Image` components if you want Next.js optimisation).
-
-## Google Cloud Console setup
-
-1. Go to <https://console.cloud.google.com> and create a project (for example "NairaMart").
-2. **OAuth consent screen** (*APIs & Services → OAuth consent screen*, or *Google Auth Platform → Branding*): choose **External**, set the app name to `NairaMart`, add a support email and developer contact email, and save. While the app is in *Testing*, add your Google account under **Test users**.
-3. **Create credentials**: *APIs & Services → Credentials → Create credentials → OAuth client ID → Web application*.
-4. Add **Authorized redirect URIs**:
-   - Local development: `http://localhost:3000/api/auth/callback/google`
-   - Vercel production: `https://<your-app>.vercel.app/api/auth/callback/google` (or your custom domain)
-5. Copy the **Client ID** and **Client secret** into `.env.local` as `GOOGLE_CLIENT_ID` and `GOOGLE_CLIENT_SECRET`. On Vercel, add the same two variables in Project Settings.
 
 ## Mailgun setup
 
