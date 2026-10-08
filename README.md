@@ -16,30 +16,11 @@ Visit https://nairamart-eta.vercel.app to view the live website
 - Demo payment flow ending on a clearly labelled confirmation page
 - Google sign-in/sign-out with Auth.js (database sessions in Neon)
 - Mailgun order confirmation email, sent server-side; failures are logged and never crash the app
-- Prices in Nigerian Naira, formatted with `en-NG` (for example `₦250,000`)
 - Responsive layout, mobile menu, loading, empty and error states
 
 ## Tech stack
 
 Next.js (App Router) · TypeScript · Tailwind CSS 4 · DaisyUI 5 · Neon PostgreSQL · Drizzle ORM · Auth.js (next-auth v5) with Google · Zod · React Hook Form · Mailgun HTTP API · Lucide React · Vercel
-
-## Project structure
-
-```
-src/
-  app/            Routes: /, /shop, /products/[slug], /cart, /checkout, /checkout/success, /signin, /api/auth
-  actions/        Server actions (checkout, auth)
-  components/     UI by area: layout, cart, product, checkout, brand, ui
-  db/             Drizzle schema, lazy Neon client, seed script and seed data
-  emails/         Order confirmation email template
-  lib/            Constants, Naira formatting, product queries, Mailgun client, cart store/hook
-  schemas/        Zod schemas (cart, checkout, shop filters)
-  types/          Type augmentations (Auth.js session)
-  auth.ts         Auth.js configuration
-drizzle/          Generated SQL migrations
-public/products/  Generated placeholder product images (SVG)
-scripts/          Product image generator
-```
 
 ## Prerequisites
 
