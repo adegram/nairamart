@@ -7,6 +7,7 @@ import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { seedProducts } from "../src/db/seed-data";
 
+
 const gradients: Record<string, [string, string]> = {
   phones: ["#0f766e", "#14b8a6"],
   laptops: ["#1d4ed8", "#60a5fa"],
