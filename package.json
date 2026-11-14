@@ -14,7 +14,7 @@
     "db:seed": "tsx src/db/seed.ts",
     "images:generate": "tsx scripts/generate-images.ts"
   },
-
+  
   "dependencies": {
     "@auth/drizzle-adapter": "^1.11.3",
     "@hookform/resolvers": "^5.9.1",
