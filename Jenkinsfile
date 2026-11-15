@@ -15,7 +15,7 @@ pipeline {
         APP_NAME          = 'nairamart'
         DOCKER_REGISTRY   = 'docker.io'
         DOCKER_IMAGE      = 'adehorizon/nairamart'
-        SONAR_PROJECT_KEY = 'nairamart'
+        SONAR_PROJECT_KEY = '******'
         SONAR_HOST_URL    = 'http://SONARQUBE_HOST:9000'
     }
 
