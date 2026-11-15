@@ -157,7 +157,8 @@ pipeline {
         always {
             sh '''
                 docker image prune -f || true
-            '''
+            '''    
+            
             cleanWs()
         }
     }
