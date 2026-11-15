@@ -16,7 +16,7 @@ pipeline {
         DOCKER_REGISTRY   = 'docker.io'
         DOCKER_IMAGE      = 'adehorizon/nairamart'
         SONAR_PROJECT_KEY = 'nairamart'
-        SONAR_HOST_URL    = 'http://YOUR_SONARQUBE_HOST:9000'
+        SONAR_HOST_URL    = 'http://SONARQUBE_HOST:9000'
     }
 
     stages {
