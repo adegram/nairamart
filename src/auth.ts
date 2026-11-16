@@ -11,7 +11,7 @@ export const { handlers, auth, signIn, signOut } = NextAuth(() => ({
     sessionsTable: sessions,
     verificationTokensTable: verificationTokens,
   }),
-  providers: [
+  providers: [ 
     Google({
       clientId: process.env.GOOGLE_CLIENT_ID,
       clientSecret: process.env.GOOGLE_CLIENT_SECRET,
@@ -27,3 +27,4 @@ export const { handlers, auth, signIn, signOut } = NextAuth(() => ({
     },
   },
 }));
+/*End*/
