@@ -4,10 +4,10 @@
  * These are placeholders you can replace with real product photos.
  */
 
+
 import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { seedProducts } from "../src/db/seed-data";
-
 
 const gradients: Record<string, [string, string]> = {
   phones: ["#0f766e", "#14b8a6"],
