@@ -2,7 +2,6 @@
  * Run with: npm run images:generate
  * These are placeholders you can replace with real product photos. */
 
-
 import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { seedProducts } from "../src/db/seed-data";
