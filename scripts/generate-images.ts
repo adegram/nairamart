@@ -1,5 +1,5 @@
 /**
- * Generates a clean SVG illustration for each seed product into public/products.
+ * Generates a clean SVG illustration for each seed product into public /products.
  * Run with: npm run images:generate
  * These are placeholders you can replace with real product photos.
  */
