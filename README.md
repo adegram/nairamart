@@ -7,7 +7,6 @@ Visit https://nairamart-eta.vercel.app to view the live website
 > **The payment button is a demo.** NairaMart does not integrate Stripe, Paystack, Flutterwave, PayPal or any other gateway. Clicking "Pay ₦X (Demo)" charges nothing, stores no order, and ships nothing. The success page says so explicitly.
 
 ## Features
-
 - Home page with hero, categories and featured products
 - Shop page with category filter, search and sorting (server-side, validated with Zod)
 - Product details with stock status, quantity picker and related products
