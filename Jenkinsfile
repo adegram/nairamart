@@ -48,6 +48,7 @@ pipeline {
             }
         }
 
+        
         stage('Type Check') {
             steps {
                 echo 'Checking TypeScript types...'
